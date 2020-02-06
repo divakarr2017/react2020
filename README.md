@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## change port for local
+    modify part of package.json from:
+
+    "start": "react-scripts start"
+    for Linux and MacOS to:    
+    "start": "PORT=3006 react-scripts start"
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
