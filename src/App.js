@@ -1,6 +1,16 @@
-import React from 'react';
+
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+ 
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Error from './components/Error';
+import Navigation from './components/Navigation';
 import logo from './logo.svg';
 import './App.css';
+
+import { NavLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -8,17 +18,33 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         Learn React 2020
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 2020 HAR HAR MAHADEV
-        </a>
+        <p><b>Divakar Rattan</b>
+        @divakartec09
+        Do more than belong: participate. 
+        Do more than care: help. 
+        Do more than believe: practice. 
+        Do more than be fair: be kind. 
+        Do more than forgive: forget. Do more
+        </p>
+        
       </header>
+      <BrowserRouter>
+      <div>
+          <NavLink to="/" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>Home</NavLink>
+          <NavLink to="/about" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>About Us</NavLink>
+          <NavLink to="/contact" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>Contact Us</NavLink>
+       </div>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/about" component={AboutUs}/>
+             <Route path="/contact" component={ContactUs}/>
+            <Route component={Error}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
     </div>
   );
 }
-
 export default App;
