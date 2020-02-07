@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
+import SignIn from './components/SignIn';
 import Error from './components/Error';
 import Navigation from './components/Navigation';
 import logo from './logo.svg';
@@ -19,7 +20,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         Learn React 2020
         <p><b>Divakar Rattan</b>
-        <a href="https://divakarr2017.github.io/react2020/">demo website</a>
+        <a to="/" style={{texDecoration: 'none', color: 'red', margin:'10px'}} href="https://divakarr2017.github.io/react2020/">demo website</a>
         @divakartec09
         Do more than belong: participate. 
         Do more than care: help. 
@@ -34,6 +35,7 @@ function App() {
           <NavLink to="/" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>Home</NavLink>
           <NavLink to="/about" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>About Us</NavLink>
           <NavLink to="/contact" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>Contact Us</NavLink>
+          <NavLink to="/signIn" style={{texDecoration: 'none', color: 'black', margin:'10px'}}>SignIn</NavLink>
        </div>
         <div>
           <Navigation />
@@ -41,6 +43,7 @@ function App() {
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={AboutUs}/>
              <Route path="/contact" component={ContactUs}/>
+             <Route path="/signIn" component={SignIn}/>
             <Route component={Error}/>
            </Switch>
         </div> 
