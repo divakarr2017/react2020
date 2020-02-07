@@ -26,7 +26,7 @@ function App() {
         Do more than be fair: be kind. 
         Do more than forgive: forget. Do more
         </p>
-         
+         <Home />
         <BrowserRouter>      
           <Navigation />
             <Switch>
