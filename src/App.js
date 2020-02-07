@@ -3,14 +3,14 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './components/Home';
+
+import Error from './components/Error';
+import logo from './logo.svg';
+import './App.css';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import SignIn from './components/SignIn';
 import Navigation from './components/Navigation';
-import Error from './components/Error';
-import logo from './logo.svg';
-import './App.css';
-
 import { NavLink } from 'react-router-dom';
 
 function App() {
@@ -26,7 +26,18 @@ function App() {
         Do more than be fair: be kind. 
         Do more than forgive: forget. Do more
         </p>
-      <Home />
+         <Home />
+        <BrowserRouter>      
+          <Navigation />
+            <Switch>
+            
+             <Route path="/about" component={AboutUs}/>
+             <Route path="/contact" component={ContactUs}/>
+             <Route path="/signIn" component={SignIn}/>
+             <Route path="/error" component={Error}/>
+            
+           </Switch>
+         </BrowserRouter>
    
       
     </div>
