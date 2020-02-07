@@ -1,8 +1,5 @@
 import React from 'react';
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import { NavLink } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import SignIn from './SignIn';
@@ -86,17 +83,7 @@ function Copyright() {
           
         </Toolbar>
         </AppBar>
-            
-        <BrowserRouter>      
-          <Navigation />
-            <Switch>
-            
-             <Route path="/about" component={AboutUs}/>
-             <Route path="/contact" component={ContactUs}/>
-             <Route path="/signIn" component={SignIn}/>
-            
-           </Switch>
-         </BrowserRouter>
+        
         </div>
         <Box mt={8}>
           <Copyright />
