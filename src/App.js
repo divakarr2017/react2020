@@ -68,38 +68,21 @@ function App() {
         Do more than be fair: be kind. 
         Do more than forgive: forget. Do more
         </p>
-        <AppBar position="static">
-        <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-            </IconButton>    
-            <BrowserRouter>  
-            <Typography className={classes.root}>
-            <Button color="inherit"><Link href="/about"  color="inherit" >
-                 AboutUs
-            </Link></Button>
-            <Button color="inherit"><Link href="/contact" color="inherit">
-            ContactUs
-            </Link></Button>
-            <Button color="inherit"><Link href="/signIn"   color="inherit">SignIn</Link></Button>
-            <Button color="inherit"><Link href="/"  color="inherit" >
-                 back to Home
-            </Link></Button>
-            </Typography>
-            </BrowserRouter>
-        </Toolbar>
-        </AppBar>
-        <BrowserRouter>      
-          <Navigation />
-            <Switch>
+        <BrowserRouter> 
+          <AppBar position="static">
+            <Navigation /> 
+          </AppBar>
+          <Switch>
+              
+              <Route path="/about"    component={AboutUs}/>
+              <Route path="/contact"  component={ContactUs}/>
+              <Route path="/signIn"   component={SignIn}/>
+              <Route path="/error"  component={Error}/>
             
-             <Route path="/about"    component={AboutUs}/>
-             <Route path="/contact"  component={ContactUs}/>
-             <Route path="/signIn"   component={SignIn}/>
-             <Route path="/error"  component={Error}/>
-            
-           </Switch>
-         </BrowserRouter>
+            </Switch>
+        </BrowserRouter>
+
+      
         
       
     </div>
