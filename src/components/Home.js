@@ -62,27 +62,7 @@ function Copyright() {
            welcome 2020 dashboard
         <div className={classes.paper}>
       
-        <AppBar position="static">
-        <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-            </IconButton>    
-       
-            <Typography className={classes.root}>
-            <Button color="inherit"><Link href="/about"  color="inherit" >
-                 AboutUs
-            </Link></Button>
-            <Button color="inherit"><Link href="/contact" color="inherit">
-            ContactUs
-            </Link></Button>
-            <Button color="inherit"><Link href="/signIn"   color="inherit">SignIn</Link></Button>
-            <Button color="inherit"><Link href="/"  color="inherit" >
-                 back to Home
-            </Link></Button>
-            </Typography>
-          
-        </Toolbar>
-        </AppBar>
+        
         
         </div>
         <Box mt={8}>
