@@ -73,7 +73,7 @@ function App() {
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
             </IconButton>    
-       
+            <BrowserRouter>  
             <Typography className={classes.root}>
             <Button color="inherit"><Link href="/about"  color="inherit" >
                  AboutUs
@@ -86,7 +86,7 @@ function App() {
                  back to Home
             </Link></Button>
             </Typography>
-          
+            </BrowserRouter>
         </Toolbar>
         </AppBar>
         <BrowserRouter>      
