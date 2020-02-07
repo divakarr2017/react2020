@@ -19,6 +19,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         Learn React 2020
         <p><b>Divakar Rattan</b>
+        <a href="https://divakarr2017.github.io/react2020/">demo website</a>
         @divakartec09
         Do more than belong: participate. 
         Do more than care: help. 
