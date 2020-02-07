@@ -26,19 +26,19 @@ function App() {
         Do more than be fair: be kind. 
         Do more than forgive: forget. Do more
         </p>
-         <Home />
+        <Home />
         <BrowserRouter>      
           <Navigation />
             <Switch>
             
-             <Route path="/about" component={AboutUs}/>
-             <Route path="/contact" component={ContactUs}/>
-             <Route path="/signIn" component={SignIn}/>
-             <Route path="/error" component={Error}/>
+             <Route path="/about"    component={AboutUs}/>
+             <Route path="/contact"  component={ContactUs}/>
+             <Route path="/signIn"   component={SignIn}/>
+             <Route path="/error"  component={Error}/>
             
            </Switch>
          </BrowserRouter>
-   
+        
       
     </div>
   );
