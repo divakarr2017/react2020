@@ -46,7 +46,7 @@ function Copyright() {
     },
   }));
   
-  export default function ContactUs() {
+  export default function SignIn() {
     const classes = useStyles();
   
     return (
@@ -57,7 +57,7 @@ function Copyright() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Contact us
+            Sign in
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -71,19 +71,21 @@ function Copyright() {
               autoComplete="email"
               autoFocus
             />
-             <TextField
+            <TextField
               variant="outlined"
               margin="normal"
               required
               fullWidth
-              id="mobile"
-              label="Mobile Number"
-              name="mobile"
-              autoComplete="mobile"
-              autoFocus
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              autoComplete="current-password"
             />
-         
-            
+            <FormControlLabel
+              control={<Checkbox value="remember" color="primary" />}
+              label="Remember me"
+            />
             <Button
               type="submit"
               fullWidth
@@ -91,12 +93,25 @@ function Copyright() {
               color="primary"
               className={classes.submit}
             >
-              contact us
+              Sign In
             </Button>
-           
+            <Grid container>
+              <Grid item xs>
+                <Link href="#" variant="body2">
+                  Forgot password?
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link href="#" variant="body2">
+                  {"Don't have an account? Sign Up"}
+                </Link>
+              </Grid>
+            </Grid>
           </form>
         </div>
-        
+        <Box mt={8}>
+          <Copyright />
+        </Box>
       </Container>
     );
   }
