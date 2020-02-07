@@ -6,8 +6,9 @@ import { NavLink } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import SignIn from './SignIn';
-import Error from './Error';
 import Navigation from './Navigation';
+import Error from './Error';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Link from '@material-ui/core/Link';
@@ -78,7 +79,7 @@ function Copyright() {
             ContactUs
             </Link></Button>
             <Button color="inherit"><Link href="/signIn"   color="inherit">SignIn</Link></Button>
-            <Button color="inherit"><Link href="/react2020/"  color="inherit" >
+            <Button color="inherit"><Link href="/"  color="inherit" >
                  back to Home
             </Link></Button>
             </Typography>

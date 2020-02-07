@@ -4,6 +4,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import SignIn from './components/SignIn';
+import Navigation from './components/Navigation';
+import Error from './components/Error';
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,6 +27,7 @@ function App() {
         Do more than forgive: forget. Do more
         </p>
       <Home />
+   
       
     </div>
   );
