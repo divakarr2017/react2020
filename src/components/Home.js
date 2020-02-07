@@ -71,13 +71,13 @@ function Copyright() {
             </IconButton>    
        
             <Typography className={classes.root}>
-            <Button color="inherit"><Link href="/react2020/about"  color="inherit" >
+            <Button color="inherit"><Link href="/about"  color="inherit" >
                  AboutUs
             </Link></Button>
-            <Button color="inherit"><Link href="/react2020/contact" color="inherit">
+            <Button color="inherit"><Link href="/contact" color="inherit">
             ContactUs
             </Link></Button>
-            <Button color="inherit"><Link href="/react2020/signIn"   color="inherit">SignIn</Link></Button>
+            <Button color="inherit"><Link href="/signIn"   color="inherit">SignIn</Link></Button>
             <Button color="inherit"><Link href="/react2020/"  color="inherit" >
                  back to Home
             </Link></Button>
@@ -90,9 +90,9 @@ function Copyright() {
           <Navigation />
             <Switch>
             
-             <Route path="/react2020/about" component={AboutUs}/>
-             <Route path="/react2020/contact" component={ContactUs}/>
-             <Route path="/react2020/signIn" component={SignIn}/>
+             <Route path="/about" component={AboutUs}/>
+             <Route path="/contact" component={ContactUs}/>
+             <Route path="/signIn" component={SignIn}/>
             
            </Switch>
          </BrowserRouter>
