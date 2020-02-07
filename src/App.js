@@ -13,10 +13,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Error from './components/Error';
 import './App.css';
+
+import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import SignIn from './components/SignIn';
+import Channel from './components/channel';
+import Game from './components/games';
 import Navigation from './components/Navigation';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 import { NavLink } from 'react-router-dom';
 
 function Copyright() {
@@ -73,7 +79,9 @@ function App() {
             <Navigation /> 
           </AppBar>
           <Switch>
-              
+              <Route path="/home"        component={Home}/>
+              <Route path="/channel"    component={Channel}/>
+              <Route path="/games"    component={Game}/>
               <Route path="/about"    component={AboutUs}/>
               <Route path="/contact"  component={ContactUs}/>
               <Route path="/signIn"   component={SignIn}/>
@@ -81,8 +89,7 @@ function App() {
             
             </Switch>
         </BrowserRouter>
-
-      
+        
         
       
     </div>

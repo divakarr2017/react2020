@@ -39,10 +39,14 @@ const Navigation = () => {
       </IconButton>    
  
       <Typography className={classes.root}>
-          <NavLink to="/" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Home</NavLink>
+          <NavLink to="/home" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Home</NavLink>
+          <NavLink to="/channel" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Live Channels</NavLink>
+          <NavLink to="/matches" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Live Matches</NavLink>
+          <NavLink to="/games" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Live Games</NavLink>
           <NavLink to="/about" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>About Us</NavLink>
           <NavLink to="/contact" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Contact Us</NavLink>
           <NavLink to="/signIn" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Sign In</NavLink>
+          <NavLink to="/" style={{texDecoration: 'none', color: 'white', margin:'10px'}}>Main Menu</NavLink>
           </Typography>
        </Toolbar>
     );
